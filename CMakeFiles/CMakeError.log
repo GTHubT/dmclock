@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84eb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84eb0.dir/build.make CMakeFiles/cmTC_84eb0.dir/build
+make[1]: Entering directory '/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_84eb0.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_84eb0.dir/CheckSymbolExists.cxx.o -c /media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_84eb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84eb0.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_84eb0.dir/CheckSymbolExists.cxx.o  -o cmTC_84eb0 
+CMakeFiles/cmTC_84eb0.dir/CheckSymbolExists.cxx.o：在函数‘main’中：
+CheckSymbolExists.cxx:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84eb0.dir/build.make:97: recipe for target 'cmTC_84eb0' failed
+make[1]: *** [cmTC_84eb0] Error 1
+make[1]: Leaving directory '/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84eb0/fast' failed
+make: *** [cmTC_84eb0/fast] Error 2
+
+File /media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_127d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_127d1.dir/build.make CMakeFiles/cmTC_127d1.dir/build
+make[1]: Entering directory '/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_127d1.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++     -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_127d1.dir/CheckFunctionExists.cxx.o -c /media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_127d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_127d1.dir/link.txt --verbose=1
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_127d1.dir/CheckFunctionExists.cxx.o  -o cmTC_127d1 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_127d1.dir/build.make:97: recipe for target 'cmTC_127d1' failed
+make[1]: *** [cmTC_127d1] Error 1
+make[1]: Leaving directory '/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_127d1/fast' failed
+make: *** [cmTC_127d1/fast] Error 2
+
+

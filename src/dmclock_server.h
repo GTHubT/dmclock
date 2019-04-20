@@ -1107,9 +1107,12 @@ namespace crimson {
 
 	// try constraint (reservation) based scheduling
 
+	// reservation阶段是必须要满足的，所有的clien的底线
+	// 在reservation阶段不比较其weight值
 	auto& reserv = resv_heap.top();
-	if (reserv.has_request() &&
-	    reserv.next_request().tag.reservation <= now) {
+	// 判断两个条件，一个是是否有request，另外是该request是否在reservation阶段
+	// 不在reservation阶段，就在limit阶段.
+	if (reserv.has_request() && reserv.next_request().tag.reservation <= now) {
 	  return NextReq(HeapId::reservation);
 	}
 
@@ -1118,6 +1121,7 @@ namespace crimson {
 
 	// all items that are within limit are eligible based on
 	// priority
+	// 对于非reservation阶段的IO首先要考虑其
 	auto limits = &limit_heap.top();
 	while (limits->has_request() &&
 	       !limits->next_request().tag.ready &&

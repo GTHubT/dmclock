@@ -228,7 +228,7 @@ namespace crimson {
 	size_t ops_count = 0;
 	for (auto i : instructions) {
 	  if (CliOp::wait == i.op) {
-	    std::this_thread::sleep_for(i.args.wait_time);
+	    //std::this_thread::sleep_for(i.args.wait_time);
 	  } else if (CliOp::req == i.op) {
 	    Lock l(mtx_req);
 	    for (uint64_t o = 0; o < i.args.req_params.count; ++o) {

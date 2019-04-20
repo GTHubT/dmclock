@@ -1,0 +1,12 @@
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/rebuild_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/CMakeFiles/edit_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/src/CMakeFiles/rebuild_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/src/CMakeFiles/edit_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/src/CMakeFiles/dmclock.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/CMakeFiles/rebuild_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/CMakeFiles/edit_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/src/CMakeFiles/rebuild_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/src/CMakeFiles/ssched_sim.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/src/CMakeFiles/dmc_sim.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/src/CMakeFiles/edit_cache.dir
+/media/psf/graysen/Documents/CODE/GitHub/my_fork/dmclock/sim/src/CMakeFiles/dmclock-sims.dir

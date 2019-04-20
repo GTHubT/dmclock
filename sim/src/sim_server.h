@@ -219,7 +219,7 @@ namespace crimson {
 
 	    // simulation operation by sleeping; then call function to
 	    // notify server of completion
-	    std::this_thread::sleep_for(op_time * request_cost);
+	    //std::this_thread::sleep_for(op_time * request_cost);
 
 	    // TODO: rather than assuming this constructor exists, perhaps
 	    // pass in a function that does this mapping?

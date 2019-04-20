@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/dmc_sim.dir/test_dmclock.cc.o CMakeFiles/dmc_sim.dir/test_dmclock_main.cc.o CMakeFiles/dmc_sim.dir/config.cc.o CMakeFiles/dmc_sim.dir/str_list.cc.o CMakeFiles/dmc_sim.dir/ConfUtils.cc.o  -o ../dmc_sim ../../src/libdmclock.a -lpthread 
